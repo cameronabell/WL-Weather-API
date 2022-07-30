@@ -8,7 +8,7 @@ Wilderness Louisville originally used a plugin that connected directly to the Op
 ## How it works
 When calling any endpoints, the API will first attempt to get the weather from cache. If available, it will return what's in cache. If the cache is older than 2 minutes OR of no cache exists, it will make a request to the OpenWeatherMap API to get the latest data.
 
-So now if multiple of users are accessing the Wilderness Louisville website at the same time, they will all be calling this API to get the weather from cache. Whenever the cache reaches 2 minutes old, it will make a single API request to OpenWeatherMap. The max requests this API will make to OpenWeatherMap is 21,900 per month, well under the 1,000,000 calls/month quota.
+So, now, if multiple of users are accessing the Wilderness Louisville website at the same time, they will all be calling this API to get the weather from cache. Whenever the cache reaches 2 minutes old, it will make a single API request to OpenWeatherMap. The max requests this API will make to OpenWeatherMap is 21,900 per month, well under the 1,000,000 calls/month quota.
 
 > Created By [Cameron Abell](https://cameronabell.com) - Last Updated 7/30/2022
 
